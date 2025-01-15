@@ -3,6 +3,7 @@
 When JavaScript has to perform an operation on two different data types, it first performs type coercion to turn them into the same data type. If a string is involved, then the other operand is also turned into a string, and then the "+" operator concatenates them.
 e.g. 3 + 4 === 7, but 3 + "4" === "34".
 
+
 2. Name a scenario where using the "==" operator could cause a bug.
 
 In a text-only console app, a user is choosing from the main menu.
@@ -18,3 +19,18 @@ Their instructor reviewed their code and told them to use "===" instead, so they
     '0' === 0  --> false
 Okay this answer got a little into the weeds I guess.
 
+
+3. Name the operator(s) that you find confusing and explain why.
+
+I'm a little shaky on the "yield" operator, but I think that's just because I haven't messed around enough yet with iterators and generators.
+
+
+4. Explain a situation where you would use the Modulus operator and why.
+
+If x % y === 0, then x is evenly divisible by y.
+This is useful, for instance, in calculating whether a given year is a leap year.
+Leap years only occur when the year is divisible by 4, but not by 400.
+
+if ((year % 4 === 0) && (year % 400 !== 0)) {
+  isLeapYear = true;
+}
