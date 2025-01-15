@@ -18,6 +18,7 @@ Originally that wasn't a problem, because they were using "==" to check the inpu
 Their instructor reviewed their code and told them to use "===" instead, so they did - but they didn't realize how that would affect their menu's functionality, so they didn't refactor anything else. And now their menu won't let anyone start a new game.
     '0' === 0  --> false
 Okay this answer got a little into the weeds I guess.
+Anyway, if you swap over to the "equality-test" branch in this repo, I coded a crude mockup of this scenario that you can activate by clicking the "Submit" button in assignment.html (ideally with the dev console open).
 
 
 3. Name the operator(s) that you find confusing and explain why.
