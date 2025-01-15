@@ -1,0 +1,20 @@
+1. Explain why a number data type added to a string data type returns a string.
+
+When JavaScript has to perform an operation on two different data types, it first performs type coercion to turn them into the same data type. If a string is involved, then the other operand is also turned into a string, and then the "+" operator concatenates them.
+e.g. 3 + 4 === 7, but 3 + "4" === "34".
+
+2. Name a scenario where using the "==" operator could cause a bug.
+
+In a text-only console app, a user is choosing from the main menu.
+    0: New game
+    1: Continue
+    2: Options
+    3: Quit
+New game, rad! They type 0 and press enter... and nothing happens.
+See, the input from the console is a string, and the developer didn't explicitly convert the user's choice to a number using parseInt().
+Originally that wasn't a problem, because they were using "==" to check the input, so it was automatically coerced to a number.
+    '0' == 0  -->  true
+Their instructor reviewed their code and told them to use "===" instead, so they did - but they didn't realize how that would affect their menu's functionality, so they didn't refactor anything else. And now their menu won't let anyone start a new game.
+    '0' === 0  --> false
+Okay this answer got a little into the weeds I guess.
+
